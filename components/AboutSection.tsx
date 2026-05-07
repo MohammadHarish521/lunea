@@ -106,7 +106,7 @@ export default function AboutSection() {
                 className="flex-1 px-5 py-2.5 bg-transparent outline-none text-sm font-normal text-lunea-text placeholder:text-lunea-text placeholder:opacity-40"
               />
               <button
-                className="px-5 py-2.5 rounded-full text-sm font-normal text-white transition-opacity hover:opacity-90 shrink-0"
+                className="px-6 py-3 rounded-full text-sm font-normal text-white transition-opacity hover:opacity-90 shrink-0"
                 style={{ backgroundColor: "#9C4E56" }}
               >
                 Join Now

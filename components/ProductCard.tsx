@@ -1,6 +1,7 @@
 "use client";
 
-import { Heart, Star } from "@phosphor-icons/react";
+import { Star } from "@phosphor-icons/react";
+import { HeartIcon } from "@phosphor-icons/react/dist/ssr";
 
 type ProductCardProps = {
   image: string;
@@ -27,7 +28,7 @@ export default function ProductCard({
         aria-label="Add to wishlist"
         className="absolute top-4 right-4 w-8 h-8 flex items-center justify-center rounded-full bg-white text-lunea-text hover:bg-lunea-badge transition-colors z-10"
       >
-        <Heart size={20} weight="regular" />
+        <HeartIcon size={20} weight="regular" />
       </button>
 
       {/* Product image — square on mobile, flex-grow on desktop */}
@@ -47,12 +48,14 @@ export default function ProductCard({
             {rating} ({reviews})
           </span>
         </div>
-        <p className="text-[15px] font-bold text-lunea-text">${price}</p>
+        <p className="text-[15px] tracking-[-0.04em] font-bold text-lunea-text">
+          ${price}
+        </p>
       </div>
 
       {/* CTA */}
       <button
-        className="w-full md:h-[38px] py-2.5 md:py-0 rounded-full text-sm font-normal text-white transition-opacity hover:opacity-90 mt-3 shrink-0"
+        className="w-full px-6 py-3 rounded-full text-sm font-normal text-white transition-opacity hover:opacity-90 mt-3 shrink-0"
         style={{ backgroundColor: "#9C4E56" }}
       >
         Add to cart

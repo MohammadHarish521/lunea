@@ -1,10 +1,35 @@
 "use client";
 
-import { Flower, InstagramLogo, FacebookLogo, TiktokLogo, PinterestLogo, ArrowRight } from "@phosphor-icons/react";
+import {
+  ArrowRight,
+  FacebookLogo,
+  Flower,
+  InstagramLogo,
+  PinterestLogo,
+  TiktokLogo,
+} from "@phosphor-icons/react";
 
-const shopLinks = ["All products", "Best Sellers", "Cleanser", "Moisturizers", "Serums"];
-const aboutLinks = ["Our Story", "Ingredients", "Sustainability", "Careers", "Press"];
-const helpLinks = ["FAQs", "Shipping & Returns", "Contact Us", "Track Order", "Privacy Policy"];
+const shopLinks = [
+  "All products",
+  "Best Sellers",
+  "Cleanser",
+  "Moisturizers",
+  "Serums",
+];
+const aboutLinks = [
+  "Our Story",
+  "Ingredients",
+  "Sustainability",
+  "Careers",
+  "Press",
+];
+const helpLinks = [
+  "FAQs",
+  "Shipping & Returns",
+  "Contact Us",
+  "Track Order",
+  "Privacy Policy",
+];
 
 const socialIcons = [
   { icon: <InstagramLogo size={20} weight="regular" />, label: "Instagram" },
@@ -33,17 +58,24 @@ function LinkColumn({ title, links }: { title: string; links: string[] }) {
 
 export default function Footer() {
   return (
-    <footer className="w-full bg-lunea-bg" style={{ borderTop: "1px solid #F5E6E9" }}>
+    <footer
+      className="w-full bg-lunea-bg"
+      style={{ borderTop: "1px solid #F5E6E9" }}
+    >
       {/* Main grid */}
       <div className="px-6 md:px-16 py-12 grid grid-cols-2 md:grid-cols-5 gap-10 md:gap-8">
         {/* Brand column */}
         <div className="col-span-2 md:col-span-1 flex flex-col gap-4">
           {/* Logo */}
           <div className="flex items-center gap-2">
-            <Flower size={20} weight="fill" className="text-lunea-text" />
+            <Flower size={20} className="text-lunea-text" />
             <span
               className="text-lunea-text font-medium"
-              style={{ fontSize: "20px", letterSpacing: "-0.04em", lineHeight: "1.2" }}
+              style={{
+                fontSize: "24px",
+                letterSpacing: "-0.04em",
+                lineHeight: "1.2",
+              }}
             >
               Lunea
             </span>
@@ -54,7 +86,9 @@ export default function Footer() {
             className="text-lunea-text font-normal"
             style={{ fontSize: "14px", lineHeight: "1.5", opacity: 0.7 }}
           >
-            Skincare that loves you back,<br />Clean ingredients, real results.
+            Skincare that loves you back,
+            <br />
+            Clean ingredients, real results.
           </p>
 
           {/* Social icons */}
@@ -88,10 +122,7 @@ export default function Footer() {
             Get skincare tips and exclusive offers straight to your inbox.
           </p>
           {/* Email input */}
-          <div
-            className="flex items-center rounded-full border"
-            style={{ borderColor: "#F5B5C3", backgroundColor: "#F6ECEE" }}
-          >
+          <div className="flex items-center rounded-full border border-lunea-text">
             <input
               type="email"
               placeholder="Enter your email"
