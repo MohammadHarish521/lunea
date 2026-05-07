@@ -1,26 +1,19 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --color-lunea-bg: #f6ecee;
+  --color-lunea-text: #402027;
+  --color-lunea-border: #f5b5c3;
+  --color-lunea-grid-border: #f5e6e9;
+  --color-lunea-badge: #f3d6d8;
+  --color-lunea-chip: #7a2e34;
+  --color-brand: #9c4e56;
+  --color-button: #9c4e56;
+  --font-sans: var(--font-inter-display);
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background-color: #f6ecee;
+  color: #402027;
+  font-optical-sizing: auto;
 }
