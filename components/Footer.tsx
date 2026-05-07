@@ -122,7 +122,7 @@ export default function Footer() {
             Get skincare tips and exclusive offers straight to your inbox.
           </p>
           {/* Email input */}
-          <div className="flex items-center rounded-full border border-lunea-text">
+          <div className="flex items-center rounded-full border border-lunea-border">
             <input
               type="email"
               placeholder="Enter your email"

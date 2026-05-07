@@ -54,7 +54,7 @@ export default function HeroSection() {
           <button
             className="w-full sm:w-auto px-6 py-3 rounded-full text-sm font-normal border transition-colors hover:bg-lunea-badge"
             style={{
-              borderColor: "#F5B5C3",
+              borderColor: "rgba(156, 78, 86, 0.75)",
               color: "rgba(156, 78, 86, 0.75)",
             }}
           >

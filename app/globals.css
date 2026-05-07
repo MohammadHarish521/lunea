@@ -3,7 +3,7 @@
 @theme inline {
   --color-lunea-bg: #f6ecee;
   --color-lunea-text: #402027;
-  --color-lunea-border: #f5b5c3;
+  --color-lunea-border: rgba(156, 78, 86, 0.75);
   --color-lunea-grid-border: #f5e6e9;
   --color-lunea-badge: #f3d6d8;
   --color-lunea-chip: #7a2e34;
